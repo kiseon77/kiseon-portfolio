@@ -1,0 +1,12 @@
+.menuContainer {
+  position: fixed;
+  top: 0;
+  padding: 40px 0;
+  .menuBar::before {
+    content: "";
+    width: 400px;
+    height: 4px;
+    border-radius: 100%;
+    background: #fff;
+  }
+}

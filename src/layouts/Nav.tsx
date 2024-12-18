@@ -1,3 +1,10 @@
+import { useState } from "react";
+import "./nav.scss";
 export default function Nav() {
-  return <nav>Nav</nav>;
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  return (
+    <nav className="menuContainer">
+      <div className="menuBar">{isOpen ? "CLOSE" : "OPEN"}</div>
+    </nav>
+  );
 }

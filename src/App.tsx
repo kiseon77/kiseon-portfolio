@@ -1,7 +1,11 @@
 import "./App.css";
-
+import { Route, Routes } from "react-router-dom";
+import Main from "./pages/Main";
 function App() {
-  return <>hi</>;
+  return (
+    <Routes>
+      <Route path="/" element={<Main />}></Route>
+    </Routes>
+  );
 }
-
 export default App;

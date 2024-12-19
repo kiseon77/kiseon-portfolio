@@ -14,7 +14,11 @@ export default function Summary() {
       </p>
       <div className="moveName">
         {[...myName].map((Spelling) => {
-          return <div className={Spelling}>{Spelling}</div>;
+          return (
+            <div key={Spelling} className={Spelling}>
+              {Spelling}
+            </div>
+          );
         })}
       </div>
       <div className="summary">

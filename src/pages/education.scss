@@ -1,6 +1,6 @@
 .textCarousel {
-  margin-top: 40px;
-  font-size: 4.3125rem;
+  margin: 80px 40px;
+  font-size: 3rem;
   position: relative;
   &::before {
     content: "";
@@ -22,6 +22,13 @@
       text-transform: uppercase;
       transform: translateX(30px);
       opacity: 0;
+      p {
+        line-height: 110%;
+        span {
+          font-size: 2rem;
+          color: rgba($color: #fff, $alpha: 0.6);
+        }
+      }
     }
   }
 }
@@ -30,7 +37,7 @@
   0% {
     opacity: 0;
   }
-  30% {
+  40% {
     opacity: 1;
   }
   80% {

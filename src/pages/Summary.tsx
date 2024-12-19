@@ -1,4 +1,4 @@
-import "./Summary.scss";
+import "./summary.scss";
 export default function Summary() {
   const myName = "KISEON";
 

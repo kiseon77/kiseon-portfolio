@@ -1,15 +1,19 @@
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
+import { ReactNode } from "react";
 import Nav from "./Nav";
 import Header from "./Header";
 import "./layout.scss";
-export default function Layout() {
+
+type LayoutProp = {
+  children: ReactNode;
+};
+
+export default function Layout({ children }: LayoutProp) {
   return (
     <>
       <Header />
       <Nav />
-      <main>
-        <Outlet />
-      </main>
+      <main>{children}</main>
     </>
   );
 }

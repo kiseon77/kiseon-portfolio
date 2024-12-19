@@ -3,7 +3,7 @@ export default function Summary() {
   const myName = "KISEON";
 
   return (
-    <>
+    <div className="container_20">
       <div className="mainTitle">
         프로덕트를 즐기는
         <br />
@@ -27,6 +27,6 @@ export default function Summary() {
         </div>
         <div className="caption">한기선</div>
       </div>
-    </>
+    </div>
   );
 }

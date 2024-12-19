@@ -26,7 +26,7 @@ export default function Nav() {
               <a href="">Education</a>
             </li>
             <li>
-              <a href="">Work Experience</a>
+              <a href="">Experience&Work</a>
             </li>
             <li>
               <a href="">Project</a>

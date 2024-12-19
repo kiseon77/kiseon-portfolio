@@ -1,0 +1,49 @@
+.textCarousel {
+  margin: 80px 40px;
+  font-size: 3rem;
+  position: relative;
+  &::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: #e36840;
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation: opa linear 1.5s 0s infinite;
+  }
+  ul {
+    display: grid;
+    max-width: 800px;
+    li {
+      grid-row-start: 1;
+      grid-column-start: 1;
+      text-transform: uppercase;
+      transform: translateX(30px);
+      opacity: 0;
+      p {
+        line-height: 110%;
+        span {
+          font-size: 2rem;
+          color: rgba($color: #fff, $alpha: 0.6);
+        }
+      }
+    }
+  }
+}
+
+@keyframes opa {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

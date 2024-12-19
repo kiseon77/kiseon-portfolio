@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Mungyeong-Gamhong-Apple";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Mungyeong-Gamhong-Apple.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.inner {
+  padding: 32px 0;
+  background-color: rgba($color: #373737, $alpha: 0.4);
+  border-radius: 8px;
+  text-align: center;
+  h4 {
+    font-family: "Mungyeong-Gamhong-Apple";
+    font-size: 1rem;
+    letter-spacing: -1px;
+    color: rgba($color: #fff, $alpha: 0.8);
+    span {
+      color: rgba($color: #fff, $alpha: 1);
+      font-size: 1.5rem;
+    }
+  }
+  p {
+    margin-top: 20px;
+    color: rgba($color: #fff, $alpha: 0.8);
+  }
+}
+.talkBtn {
+  margin: 60px auto;
+  width: 95px;
+  height: 95px;
+  box-shadow: 0 0 0 10px #1c1c1c, 0 0 50px rgba(225, 225, 225, 0.3);
+  border-radius: 100%;
+  position: relative;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 95%;
+    height: 95%;
+    border-radius: 100%;
+    background: #e36840;
+    transition: all 0.3s;
+    &:hover {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.border {
+  width: 100%;
+  border-top: 0.2px solid rgba($color: #fff, $alpha: 0.2);
+}
+.sns {
+  margin: auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 20px;
+  li {
+    padding-top: 32px;
+    a {
+      color: rgba($color: #fff, $alpha: 0.8);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      &:hover {
+        color: rgba($color: #fff, $alpha: 1);
+        font-weight: 600;
+      }
+    }
+  }
+}

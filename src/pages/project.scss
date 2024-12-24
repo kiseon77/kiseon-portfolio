@@ -19,14 +19,20 @@
   grid-template-columns: repeat(3, 1fr);
   perspective: 900px;
   .projectCard {
+    &:hover {
+      img {
+        scale: 0.8;
+      }
+    }
     width: 100%;
-    img {
+    .img {
       width: 100%;
       aspect-ratio: auto 1 / 1;
       background-color: antiquewhite;
       border-radius: 8px;
       object-fit: cover;
     }
+
     h4 {
       margin-top: 8px;
       display: flex;

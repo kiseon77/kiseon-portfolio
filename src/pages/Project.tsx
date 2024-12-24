@@ -1,12 +1,15 @@
 import "./project.scss";
-export default function Project() {
+interface ProjectProps {
+  handleModal: () => void;
+}
+export default function Project({ handleModal }: ProjectProps) {
   return (
     <section className="projects container_20 ">
       <div className="projectsTitle">
         <h4>Projects</h4>
       </div>
       <ul className="projectsList">
-        <li className="projectCard">
+        <li className="projectCard" onClick={handleModal}>
           <p className="img">
             <img src="" alt="" />
           </p>

@@ -17,6 +17,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  position: relative;
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -30,4 +33,13 @@ a:active {
 ul {
   list-style-type: none;
   list-style: none;
+}
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
 }

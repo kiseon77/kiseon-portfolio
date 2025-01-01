@@ -3,6 +3,7 @@ import "./projectDetail.scss";
 import ProjectInfo from "../../components/ProjectInfo";
 import ProjectWiki from "../../components/ProjectWiki";
 import ProjectBlogs from "../../components/ProjectBlogs";
+
 interface DetailProps {
   handleModal: () => void;
 }

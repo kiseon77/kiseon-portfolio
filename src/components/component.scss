@@ -34,6 +34,7 @@
   }
 }
 .projectInfoText {
+  padding-bottom: 44px;
   .infoBox {
     h4 {
       margin-top: 16px;
@@ -57,7 +58,6 @@
         color: #3a3a3a;
         text-align: center;
         border-collapse: collapse;
-        border: 2px solid rgb(212, 212, 212);
         thead {
           border-bottom: rgb(212, 212, 212) 0.5px solid;
           th {

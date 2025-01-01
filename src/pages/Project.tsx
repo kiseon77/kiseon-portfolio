@@ -1,4 +1,5 @@
 import "./project.scss";
+
 interface ProjectProps {
   handleModal: () => void;
 }
@@ -8,6 +9,7 @@ export default function Project({ handleModal }: ProjectProps) {
       <div className="projectsTitle">
         <h4>Projects</h4>
       </div>
+
       <ul className="projectsList">
         <li className="projectCard" onClick={handleModal}>
           <p className="img">

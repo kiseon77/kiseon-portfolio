@@ -1,0 +1,190 @@
+{
+  "project": [
+    {
+      "notionUrl": "https://www.notioniframe.com/notion/1wodz9i9h78",
+      "logo": "project/jacan/logo.png",
+      "id": 0,
+      "title": "작성자는 이 안에 있다",
+      "role": "Front-End Developer",
+      "period": {
+        "total": {
+          "start": "2024.02.11",
+          "end": "2024.02.29"
+        }
+      },
+      "links": {
+        "service": null,
+        "github": "https://github.com/seobon/TeamTwoFront"
+      },
+      "serviceDetails": {
+        "summary": "일기를 기분에 따라 공개/비공개로 작성할 수 있는 다이어리",
+        "mainFeatures": [
+          "공개/비공개 다이어리",
+          "캘린더",
+          "투두리스트"
+        ],
+        "projectBackground": "",
+        "targetUser": "",
+        "effects": ""
+      },
+      "techStack": {
+        "frontend": [
+          {
+            "name": "React",
+            "reason": "리액트의 숙련도를 올리기 위하여 팀프로젝트에서 채택"
+          },
+          {
+            "name": "Tailwind",
+            "reason": "Utility-First를 통해 빠르게 스타일링을 하기 위하여 채택"
+          },
+          {
+            "name": "Axios",
+            "reason": "json파싱을 하지 않고 간결하게 api요청하기 위하여 채택"
+          }
+        ],
+        "backend": [
+          "Java",
+          "SpringBoot",
+          "SpringSecurity",
+          "MySql"
+        ],
+        "design": [
+          "Figma"
+        ],
+        "infrastructure": [
+          "AWS"
+        ],
+        "versionControl": [
+          "GitHub"
+        ],
+        "collaboration": [
+          "Slack",
+          "Notion",
+          "Postman"
+        ]
+      },
+      "myRole": {
+        "summary": [
+          "FE개발",
+          "기획",
+          "디자인"
+        ],
+        "features": [
+          {
+            "title": "로그인, 회원가입, 마이페이지",
+            "implementations": [
+              "인풋 State를 효율적으로 관리하고, 코드를 줄이기 위해 react-hook-form 사용",
+              "react-hook-form을 활용하는 Input을 공통 컴포넌트로 제작, 필요한 정보는 Props로 받을수있도록 설계",
+              "useNavigate를 활용하여 뒤로가기 ( < ) 클릭 시 Props으로 받은 nav가 있다면 nav 위치로, 없다면 이전 페이지로 이동",
+              "ReactComponent 활용하여 SVG 아이콘을 컴포넌트화 하여 사용"
+            ]
+          },
+          {
+            "title": "공통컴포넌트 제작",
+            "implementations": [
+              "Navbar",
+              "Header",
+              "Popup"
+            ]
+          }
+        ]
+      },
+      "troubleShooting": [
+        {
+          "issue": "Axios 요청 시 400번대 에러",
+          "cause": "API명세서와 실제 서버에서 요구하는 값이 달랐음",
+          "solution": "API명세서에 최신화가 되지 않아 에러가 생겼음을 확인",
+          "learned": "문서화의 중요성을 알게 되었고, 회의 혹은 작업 시 노션 필수로 확인하고 업데이트 하게 되었다."
+        }
+      ],
+      "retrospective": {
+        "learnings": " 리액트를 배우기 전에는 각 페이지에서 사용하는 코드를 중복으로 적어서 코드를 볼때 구분하는 번거로움이 있었다. 리액트를 활용한 프로젝트를 하면서 중복되는 코드를 줄이기 위해 공통 컴포넌트를 사용하기 위해 노력했다. 이 과정에서 Components와 Props에 대해 이해하고 UI를 재사용 가능하게 하는 과정이 리액트에 대해 더 자세히 이해하고 익숙해지는 프로젝트였다. 프로젝트의 완성도를 올리기위해 테일윈드를 처음으로 도입해 사용하였다. 테일윈드를 세팅하면서 미리 지정해둔 스타일 덕분에, 여러 사람이 구현한 화면이 일관적으로 통일되어 보여서 좋았다. css파일 없이 스타일을 불러와서 사용하다보니 다른사람이 짠 코드를 이해하는 과정을 많이 줄일수있었다."
+      },
+      "screenshots": [
+        "https://file.notion.so/f/f/c3ba19cd-1bc2-45ec-a30d-e66aad30d69f/11c84a2c-940f-4864-ad3e-69dd7ec6044b/image.png?table=block&id=1428bbab-7865-80b3-8103-d8e8bfe502db&spaceId=c3ba19cd-1bc2-45ec-a30d-e66aad30d69f&expirationTimestamp=1735826400000&signature=038MaL-E_nQlKTiwJG-legNAQVNDL8H4lk00vueaB8s&downloadName=image.png",
+        "https://file.notion.so/f/f/c3ba19cd-1bc2-45ec-a30d-e66aad30d69f/a3c97d62-b2b1-41e2-a1ea-20f775f94234/image.png?table=block&id=1428bbab-7865-807b-b8d4-d1afb1f2e89e&spaceId=c3ba19cd-1bc2-45ec-a30d-e66aad30d69f&expirationTimestamp=1735826400000&signature=Nz4IyYDBw8mJGAXsTZV104vWTmI8PQGrVfYE2oqqr9M&downloadName=image.png",
+        "https://file.notion.so/f/f/c3ba19cd-1bc2-45ec-a30d-e66aad30d69f/e186a570-8b97-473e-90ad-cc5e2948e521/image.png?table=block&id=1428bbab-7865-807d-a939-eb6be16cd93e&spaceId=c3ba19cd-1bc2-45ec-a30d-e66aad30d69f&expirationTimestamp=1735826400000&signature=vFkjwjv2tx5jZXWPDpwM0hTees7DGaReHqUsTutE3PI&downloadName=image.png",
+        "https://file.notion.so/f/f/c3ba19cd-1bc2-45ec-a30d-e66aad30d69f/4f44eafa-40f1-48b2-b427-6391f8f8eb35/image.png?table=block&id=1428bbab-7865-8099-ab4b-e6d0ff855ea8&spaceId=c3ba19cd-1bc2-45ec-a30d-e66aad30d69f&expirationTimestamp=1735826400000&signature=7pehffLHNLj98I5gNYuwSf98PS46LrO_d82Is2ISsKM&downloadName=image.png",
+        "https://file.notion.so/f/f/c3ba19cd-1bc2-45ec-a30d-e66aad30d69f/12aa876a-bf01-4a4d-9f6a-a9313e68537e/image.png?table=block&id=1428bbab-7865-809d-90a0-d3273a4c9327&spaceId=c3ba19cd-1bc2-45ec-a30d-e66aad30d69f&expirationTimestamp=1735826400000&signature=N96mzQNXKTLWSPPcVDDIWBFtk78UmuH_yBq8RJR_My8&downloadName=image.png",
+        "https://file.notion.so/f/f/c3ba19cd-1bc2-45ec-a30d-e66aad30d69f/bc03f89d-72ea-4ed1-b74a-4290ef0aae64/image.png?table=block&id=1428bbab-7865-80d3-90b6-c80cc4140b05&spaceId=c3ba19cd-1bc2-45ec-a30d-e66aad30d69f&expirationTimestamp=1735826400000&signature=GubL3K4SyQ-MylFi-Ojq91AqvDnnZ-2JH5UxoFvgtCU&downloadName=image.png"
+      ],
+      "team": {
+        "full": [
+          {
+            "name": "김서본",
+            "github": "seobon",
+            "refactoring": false
+          },
+          {
+            "name": "이은실",
+            "github": "HeySiriLee",
+            "refactoring": false
+          }
+        ],
+        "frontend": [
+          {
+            "name": "이동욱",
+            "github": "ldw0123",
+            "refactoring": false
+          },
+          {
+            "name": "이세윤",
+            "github": "ErrorMonkey",
+            "refactoring": false
+          },
+          {
+            "name": "한기선",
+            "github": "kiseon77",
+            "refactoring": false
+          }
+        ],
+        "backend": [
+          {
+            "name": "이경도",
+            "github": "leekyoungdo",
+            "refactoring": false
+          },
+          {
+            "name": "윤병우",
+            "github": "yoonbung12",
+            "refactoring": false
+          }
+        ]
+      }
+    },
+    {
+      "notionUrl": "https://www.notioniframe.com/notion/og3fta4lq6",
+      "logo": "project/jacan/logo.png",
+      "id": 0,
+      "title": "STAYNEST",
+      "role": "Front-End Developer",
+      "period": {
+        "total": {
+          "start": "2024.10",
+          "end": "2024.11"
+        }
+      },
+      "links": {
+        "service": null,
+        "github": "https://github.com/seobon/TeamTwoFront"
+      }
+    },
+    {
+      "notionUrl": "https://www.notioniframe.com/notion/jr8haiet4rc",
+      "logo": "project/jacan/logo.png",
+      "id": 0,
+      "title": "믹골프 & 오즈코딩스쿨 자사몰 기획",
+      "role": "Front-End Developer",
+      "period": {
+        "total": {
+          "start": "2024.11",
+          "end": "2024.12"
+        }
+      },
+      "links": {
+        "service": null,
+        "github": "https://github.com/seobon/TeamTwoFront"
+      }
+    }
+  ]
+}

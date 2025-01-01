@@ -1,5 +1,8 @@
 import "./component.scss";
-
-export default function ProjectBlogs() {
+import { Project } from "../pages/Projects/type";
+interface ProjectBlogsProp {
+  projectInfo: Project | null;
+}
+export default function ProjectBlogs({ projectInfo }: ProjectBlogsProp) {
   return <div>ProjectBlogs</div>;
 }

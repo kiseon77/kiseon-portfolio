@@ -1,7 +1,7 @@
 import "./project.scss";
-
+import projectData from "../data/projects.json";
 interface ProjectProps {
-  handleModal: () => void;
+  handleModal: (projId: number) => void;
 }
 export default function Project({ handleModal }: ProjectProps) {
   return (
@@ -11,15 +11,21 @@ export default function Project({ handleModal }: ProjectProps) {
       </div>
 
       <ul className="projectsList">
-        <li className="projectCard" onClick={handleModal}>
-          <p className="img">
-            <img src="" alt="" />
-          </p>
-          <h4>
-            <span className="title">Title</span>
-            <span className="date">2024</span>
-          </h4>
-        </li>
+        {projectData.project.map((proj) => (
+          <li
+            key={proj.id}
+            className="projectCard"
+            onClick={() => handleModal(proj.id)}
+          >
+            <p className="img">
+              <img src="" alt="" />
+            </p>
+            <h4>
+              <span className="title">{proj.title}</span>
+              <span className="date">{proj.period.total.end}</span>
+            </h4>
+          </li>
+        ))}
       </ul>
     </section>
   );

@@ -9,7 +9,7 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
+      "@components/*": ["src/_components/*"],
       "@src/*": ["src/*"]
     }
   }

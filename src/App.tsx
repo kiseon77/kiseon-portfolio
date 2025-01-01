@@ -10,8 +10,10 @@ import Detail from "./pages/Projects/Detail";
 import { useEffect, useState } from "react";
 function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const handleModal = () => {
+  const [activeProj, setActiveProj] = useState<number | null>(null);
+  const handleModal = (projId: number | null) => {
     setIsOpen((prev) => !prev);
+    setActiveProj(projId);
   };
   useEffect(() => {
     if (isOpen) {
@@ -29,7 +31,7 @@ function App() {
         <Project handleModal={handleModal} />
         <Contact />
       </Layout>
-      {isOpen && <Detail handleModal={handleModal} />}
+      {isOpen && <Detail handleModal={handleModal} activeProj={activeProj} />}
     </>
   );
 }

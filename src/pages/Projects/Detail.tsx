@@ -1,53 +1,66 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./projectDetail.scss";
-import ProjectInfo from "../../components/ProjectInfo";
-import ProjectWiki from "../../components/ProjectWiki";
-import ProjectBlogs from "../../components/ProjectBlogs";
-
+// import ProjectInfo from "../../components/ProjectInfo";
+// import ProjectWiki from "../../components/ProjectWiki";
+// import ProjectBlogs from "../../components/ProjectBlogs";
+import ProjectData from "../../data/projects.json";
+import { Project } from "./type";
 interface DetailProps {
-  handleModal: () => void;
+  handleModal: (projId: number | null) => void;
+  activeProj: number | null;
 }
 
-export default function Detail({ handleModal }: DetailProps) {
-  const [isAssignedPart, setIsAssignedPart] = useState<boolean>(true);
-  const [activeTabbar, setActiveTabbar] = useState<number>(0);
-  const handlerTapBar = (i: number) => {
-    setActiveTabbar(i);
-  };
-  const tapBarArr = [
-    { name: "프로젝트이름 소개", content: <ProjectInfo /> },
-    { name: "개발위키", content: <ProjectWiki /> },
-    { name: "개발이야기", content: <ProjectBlogs /> },
-  ];
+export default function Detail({ handleModal, activeProj }: DetailProps) {
+  // const [isAssignedPart, setIsAssignedPart] = useState<boolean>(true);
+  // const [activeTabbar, setActiveTabbar] = useState<number>(0);
+  const [projectInfo, setProjectInfo] = useState<Project | null>(null);
+  useEffect(() => {
+    ProjectData.project.map((proj: any) => {
+      if (proj.id === activeProj) {
+        setProjectInfo(proj);
+      }
+    });
+  }, [activeProj]);
+
+  // const handlerTapBar = (i: number) => {
+  //   setActiveTabbar(i);
+  // };
+  // const tapBarArr = [
+  //   {
+  //     name: `${projectInfo?.title} 소개`,
+  //     content: <ProjectInfo projectInfo={projectInfo} />,
+  //   },
+  //   { name: "개발위키", content: <ProjectWiki projectInfo={projectInfo} /> },
+  //   { name: "개발이야기", content: <ProjectBlogs projectInfo={projectInfo} /> },
+  // ];
   return (
     <div className="detailContainer">
-      <div className="overlay" onClick={handleModal}></div>
+      <div className="overlay" onClick={() => handleModal(null)}></div>
       <div className="contentBox">
-        <div className="projectHeader">
+        {/* <div className="projectHeader">
           <h2>
-            <img alt="logo" />
-            프로젝트 이름
+            <img src={projectInfo?.logo} alt="logo" />
+            {projectInfo?.title}
           </h2>
-          <div className="projectService">프로젝트 서비스 소개</div>
+          <div className="projectService">
+            {projectInfo?.serviceDetails.summary}
+          </div>
         </div>
         <div className="serviceLink">
-          <a href="" target="_blank">
+          <a
+            href={
+              projectInfo?.links.service ? projectInfo?.links.service : void 0
+            }
+            target="_blank"
+          >
             서비스
-            <span>프로젝트 이름</span>
+            {projectInfo?.links.service ? " (배포중)" : " (배포중단)"}
+            <span>{projectInfo?.title}</span>
           </a>
-          <a href="" target="_blank">
+          <a href={projectInfo?.links.github} target="_blank">
             깃허브
-            <span>깃허브 레포지토리 이름</span>
+            <span>{projectInfo?.links.github.split("/").reverse()[0]}</span>
           </a>
-          <div className="stack">사용한 기술 스택</div>
-          <ul>
-            <p>프론트엔드</p>
-            <li></li>
-          </ul>
-          <ul>
-            <p>백엔드</p>
-            <li></li>
-          </ul>
         </div>
 
         <div className="myPartDev">
@@ -57,8 +70,16 @@ export default function Detail({ handleModal }: DetailProps) {
           >
             {isAssignedPart ? "📂" : "📁"} 담당한 파트
           </button>
-          <p className="myPartSummary">FE개발, 기획, 디자인</p>
-          {/* {isAssignedPart && <div className="myPart">ㄴ</div>} */}{" "}
+          <p className="myPartSummary">
+            {projectInfo?.myRole.summary.map((role) => `${role}, `)}
+          </p>
+          {isAssignedPart && (
+            <div className="myPart">
+              {projectInfo?.myRole.features.map((feat) => (
+                <div key={feat.title}>- {feat.title}</div>
+              ))}
+            </div>
+          )}
           <div className={`myPart ${isAssignedPart ? "on" : "off"}`}>
             <ul>
               <p>프론트엔드</p>
@@ -68,7 +89,7 @@ export default function Detail({ handleModal }: DetailProps) {
         </div>
 
         <div className="devInfoTab">
-          <ul>
+          <ul className="info_lists">
             {tapBarArr.map((tapBar, i) => (
               <li
                 key={tapBar.name}
@@ -80,7 +101,20 @@ export default function Detail({ handleModal }: DetailProps) {
             ))}
           </ul>
           <div className="tabBox">{tapBarArr[activeTabbar].content}</div>
-        </div>
+        </div> */}
+        {projectInfo?.notionUrl ? (
+          <iframe
+            src={projectInfo.notionUrl}
+            style={{
+              width: "100%",
+              height: "100vh",
+              border: "0",
+              padding: "0",
+            }}
+          ></iframe>
+        ) : (
+          <p>노션 페이지를 불러올 수 없습니다.</p>
+        )}
       </div>
     </div>
   );

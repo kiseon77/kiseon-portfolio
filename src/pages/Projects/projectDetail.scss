@@ -23,14 +23,17 @@
     z-index: 2000;
     .projectHeader {
       padding-bottom: 20px;
-      .projectHeader {
-        img {
-          background-color: #3c3c3c;
-          width: 44px;
-          height: 44px;
-          margin-right: 8px;
-        }
+      h2 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
+      img {
+        width: 44px;
+        height: 44px;
+        margin-right: 8px;
+      }
+
       .projectService {
         margin-top: 20px;
         background-color: rgba(0, 0, 0, 0.2);
@@ -52,13 +55,8 @@
           color: #454545;
         }
       }
-      .stack {
-        margin: 16px 0 8px 0;
-        font-size: large;
-        font-weight: 600;
-        grid-column: 1/ 4;
-      }
     }
+
     .myPartDev {
       .myPartSummary {
         padding-top: 8px;
@@ -73,8 +71,6 @@
         margin: 16px 28px;
         overflow: hidden;
         transition: all 0.5s;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         p {
           font-weight: 600;
         }
@@ -87,7 +83,7 @@
       }
     }
     .devInfoTab {
-      ul {
+      .info_lists {
         display: flex;
         justify-content: space-between;
         align-items: stretch;

@@ -23,7 +23,7 @@
     "noUncheckedSideEffectImports": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
+      "@components/*": ["src/_components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@src/*": ["src/*"]
     }

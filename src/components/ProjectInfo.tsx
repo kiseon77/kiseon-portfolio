@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./component.scss";
 export default function ProjectInfo() {
-  const [imgs, setImgs] = useState([
+  const [imgs, _setImgs] = useState([
     {
       id: 1,
       color: "lightblue",

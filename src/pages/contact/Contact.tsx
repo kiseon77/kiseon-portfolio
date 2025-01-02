@@ -1,4 +1,5 @@
 import "./contact.scss";
+
 export default function Contact() {
   return (
     <section className="container_20">
@@ -9,7 +10,7 @@ export default function Contact() {
         </h4>
         <p>함께 성장하며 가치를 더해나가겠습니다. 언제든 연락 주세요!</p>
         <div className="talkBtn">
-          <a href="">
+          <a href="mailto:kiseon.han77@gmail.com?subject=Portfolio Inquiry&body=Hello!">
             <span></span>
           </a>
         </div>
@@ -31,7 +32,9 @@ export default function Contact() {
             </a>
           </li>
           <li>
-            <a href="">email</a>
+            <a href="mailto:kiseon.han77@gmail.com?subject=Portfolio Inquiry&body=Hello!">
+              email
+            </a>
           </li>
         </ul>
       </div>

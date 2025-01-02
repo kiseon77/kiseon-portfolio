@@ -5,7 +5,7 @@ import Layout from "@layouts/Layout";
 import Education from "./pages/Education";
 import WorkExperience from "./pages/WorkExperience";
 import Project from "./pages/Project";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact/Contact";
 import Detail from "./pages/Projects/Detail";
 import { useEffect, useRef, useState } from "react";
 function App() {

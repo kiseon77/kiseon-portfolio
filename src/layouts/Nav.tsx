@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./nav.scss";
-export default function Nav() {
+
+interface NavProps {
+  onMenuClick: (section: string) => void;
+}
+
+export default function Nav({ onMenuClick }: NavProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -20,19 +25,23 @@ export default function Nav() {
         <div className="menuListContainer">
           <ul>
             <li>
-              <a href="">Summary</a>
+              <button onClick={() => onMenuClick("main")}>Summary</button>
             </li>
             <li>
-              <a href="">Education</a>
+              <button onClick={() => onMenuClick("education")}>
+                Education
+              </button>
             </li>
             <li>
-              <a href="">Experience&Work</a>
+              <button onClick={() => onMenuClick("workExperience")}>
+                Experience & Work
+              </button>
             </li>
             <li>
-              <a href="">Project</a>
+              <button onClick={() => onMenuClick("project")}>Project</button>
             </li>
             <li>
-              <a href="">Contact</a>
+              <button onClick={() => onMenuClick("contact")}>Contact</button>
             </li>
           </ul>
         </div>

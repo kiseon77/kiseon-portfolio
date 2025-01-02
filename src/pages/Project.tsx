@@ -18,7 +18,8 @@ export default function Project({ handleModal }: ProjectProps) {
             onClick={() => handleModal(proj.id)}
           >
             <p className="img">
-              <img src="" alt="" />
+              <img src={proj.logo} alt="" />
+              <span className="projectType_badge">{proj.type}</span>
             </p>
             <h4>
               <span className="title">{proj.title}</span>

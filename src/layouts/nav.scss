@@ -48,18 +48,19 @@ nav {
 
 .menuListContainer {
   margin-top: 32px;
-  a {
+  button {
+    padding: 8px 0;
     font-size: 3rem;
     transition: all 0.5s ease-in-out;
     color: rgba($color: #fff, $alpha: 1);
   }
   &:hover {
-    a {
+    button {
       color: rgba($color: #fff, $alpha: 0.2);
     }
   }
   li:hover {
-    a {
+    button {
       color: rgba($color: #fff, $alpha: 1);
     }
   }

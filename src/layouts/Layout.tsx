@@ -1,18 +1,17 @@
-// import { Outlet } from "react-router-dom";
-import { ReactNode } from "react";
 import Nav from "./Nav";
 import Header from "./Header";
 import "./layout.scss";
 
-type LayoutProp = {
-  children: ReactNode;
-};
+interface LayoutProps {
+  children: React.ReactNode;
+  onMenuClick: (section: string) => void;
+}
 
-export default function Layout({ children }: LayoutProp) {
+export default function Layout({ children, onMenuClick }: LayoutProps) {
   return (
     <>
       <Header />
-      <Nav />
+      <Nav onMenuClick={onMenuClick} />
       <main>{children}</main>
     </>
   );

@@ -48,6 +48,7 @@ interface Team {
 }
 
 export interface Project {
+  type: string;
   notionUrl: string;
   logo: string;
   title: string;

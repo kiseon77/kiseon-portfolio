@@ -2,9 +2,10 @@
   "project": [
     {
       "notionUrl": "https://www.notioniframe.com/notion/1wodz9i9h78",
-      "logo": "project/jacan/logo.png",
+      "logo": "project/jacan/logo.svg",
       "id": 0,
       "title": "작성자는 이 안에 있다",
+      "type": "C2B_블로그",
       "role": "Front-End Developer",
       "period": {
         "total": {
@@ -147,16 +148,17 @@
           {
             "name": "윤병우",
             "github": "yoonbung12",
-            "refactoring": false
+            "refactoring ": false
           }
         ]
       }
     },
     {
       "notionUrl": "https://www.notioniframe.com/notion/og3fta4lq6",
-      "logo": "project/jacan/logo.png",
-      "id": 0,
+      "logo": "project/staynest/logo.svg",
+      "id": 1,
       "title": "STAYNEST",
+      "type": "O2O_숙박예약 플랫폼",
       "role": "Front-End Developer",
       "period": {
         "total": {
@@ -171,9 +173,10 @@
     },
     {
       "notionUrl": "https://www.notioniframe.com/notion/jr8haiet4rc",
-      "logo": "project/jacan/logo.png",
-      "id": 0,
+      "logo": "project/micgolf/logo.svg",
+      "id": 2,
       "title": "믹골프 & 오즈코딩스쿨 자사몰 기획",
+      "type": "B2C_전자상거래 플랫폼",
       "role": "Front-End Developer",
       "period": {
         "total": {

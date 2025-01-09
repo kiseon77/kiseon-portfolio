@@ -15,7 +15,8 @@
       },
       "links": {
         "service": null,
-        "github": "https://github.com/seobon/TeamTwoFront"
+        "github": "https://github.com/seobon/TeamTwoFront",
+        "notion": "https://kiseon.notion.site/1428bbab78658022957dc268f22292e0?pvs=4"
       },
       "serviceDetails": {
         "summary": "일기를 기분에 따라 공개/비공개로 작성할 수 있는 다이어리",
@@ -168,7 +169,8 @@
       },
       "links": {
         "service": null,
-        "github": "https://github.com/seobon/TeamTwoFront"
+        "github": "https://github.com/oz-04-main-001/Frontend",
+        "notion": "https://kiseon.notion.site/STAYNEST-1428bbab786580509c52df23f5c0d40a?pvs=4"
       }
     },
     {
@@ -186,7 +188,8 @@
       },
       "links": {
         "service": null,
-        "github": "https://github.com/seobon/TeamTwoFront"
+        "github": "https://github.com/MICGolf/frontend",
+        "notion": "https://kiseon.notion.site/14c8bbab786580589249fb2a97ead504?pvs=4"
       }
     }
   ]

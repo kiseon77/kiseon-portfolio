@@ -12,19 +12,22 @@
   font-size: 2.25rem;
   height: 100%;
 }
+
 .projectsList {
   width: 100%;
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(3, 1fr);
-  perspective: 900px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
   .projectCard {
     &:hover {
       img {
         scale: 0.8;
       }
     }
+
     width: 100%;
+
     .img {
       position: relative;
       display: flex;
@@ -32,12 +35,14 @@
       aspect-ratio: auto 1 / 1;
       background-color: antiquewhite;
       border-radius: 8px;
+
       img {
         width: 80%;
         object-fit: cover;
         margin: auto;
         display: block;
       }
+
       .projectType_badge {
         color: #fff;
         position: absolute;
@@ -47,6 +52,7 @@
         overflow: hidden;
         background-color: rgba($color: #000000, $alpha: 0.4);
         padding: 0 4px;
+
         &:before {
           content: "";
           position: absolute;
@@ -63,9 +69,11 @@
       display: flex;
       justify-content: space-between;
       padding: 0 4px;
+
       .title {
         font-size: 1rem;
       }
+
       .date {
         font-size: 0.9375rem;
       }

@@ -5,7 +5,7 @@ nav {
 }
 
 .menuContainer {
-  position: fixed;
+  position: absolute;
   top: 8px;
   left: 50%;
   transform: translateX(-50%);
@@ -18,16 +18,19 @@ nav {
 
   .menuBarContainer {
     padding: 20px;
+
     .menuBar {
       width: 190px;
       display: inline-block;
       border-radius: 8px;
       font-size: 0.75rem;
       transition: all 0.2s ease-in-out;
+
       &:hover {
         width: 210px;
         color: rgba($color: #fff, $alpha: 1);
       }
+
       .menuBarAsset {
         width: 100%;
         height: 4px;
@@ -39,6 +42,7 @@ nav {
     }
   }
 }
+
 .show {
   background-color: rgba($color: #fff, $alpha: 0.3);
   color: rgba($color: #fff, $alpha: 1);
@@ -48,17 +52,20 @@ nav {
 
 .menuListContainer {
   margin-top: 32px;
+
   button {
     padding: 8px 0;
     font-size: 3rem;
     transition: all 0.5s ease-in-out;
     color: rgba($color: #fff, $alpha: 1);
   }
+
   &:hover {
     button {
       color: rgba($color: #fff, $alpha: 0.2);
     }
   }
+
   li:hover {
     button {
       color: rgba($color: #fff, $alpha: 1);
